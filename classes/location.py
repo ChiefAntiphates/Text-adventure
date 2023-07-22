@@ -13,10 +13,14 @@ class Location:
         self.enemies = enemies
         self.npc = npcs
         self.can_attack = False
+        self.directions = {}
     
     #Set the directions attribute of the object
     def setDirections(self, directions: 'dict'):
         self.directions = directions
+
+    def addDirection(self, direction, destination):
+        self.directions[direction] = destination
 
     def getInventoryLower(self):
         inventory = []

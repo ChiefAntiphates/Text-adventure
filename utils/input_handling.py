@@ -103,6 +103,7 @@ def look(player, words):
         
 def go(player, words):
     direction = words[1]
+    print(direction)
     if direction in player.current_location.directions.keys():
         player.current_location = player.current_location.directions[direction]
         look(player, words)

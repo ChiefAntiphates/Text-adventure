@@ -14,7 +14,4 @@ inventory = {
     "shop" : [],
 
     "church_vault" : [Item("gold", 1, 200)]  
-
-
-    
 }
